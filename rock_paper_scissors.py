@@ -33,7 +33,7 @@ user_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 f
 
 if user_choice == 0:
   print(rock)
-if user_choicee == 1:
+if user_choice == 1:
   print(paper)
 if user_choice == 2:
   print(scissors)
@@ -48,7 +48,9 @@ if computer_choice == 1:
 if computer_choice == 2:
   print(scissors)
 
-if computer_choice == 0 and user_choice == 1:
+if user_choice >= 3 or user_choice < 0:
+  print ("Invalid number, you lose!")
+elif computer_choice == 0 and user_choice == 1:
   print("You win")
 elif computer_choice == 0 and user_choice == 2:
   print("You lose")
@@ -62,3 +64,4 @@ elif computer_choice == 2 and user_choice == 1:
   print("You lose")  
 elif computer_choice == user_choice:
   print("Draw")
+
