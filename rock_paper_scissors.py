@@ -32,26 +32,20 @@ choose = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Sc
 
 
 if choose == 0:
-  choose == rock
   print(rock)
 if choose == 1:
-  choose == paper
   print(paper)
 if choose == 2:
-  choose == scissors
   print(scissors)
 
 computer_choose = random.randint(0,2)
 print("Computer choise:")
 
 if computer_choose == 0:
-  computer_choose == rock
   print(rock)
 if computer_choose == 1:
-  computer_choose == paper
   print(paper)
 if computer_choose == 2:
-  computer_choose == scissors
   print(scissors)
 
 if computer_choose == 0 and choose == 1:
