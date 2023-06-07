@@ -28,37 +28,37 @@ scissors = '''
 import random
 
 
-choose = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors. "))
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors. "))
 
 
-if choose == 0:
+if user_choice == 0:
   print(rock)
-if choose == 1:
+if user_choicee == 1:
   print(paper)
-if choose == 2:
+if user_choice == 2:
   print(scissors)
 
-computer_choose = random.randint(0,2)
-print("Computer choise:")
+computer_choice = random.randint(0,2)
+print("Computer choice:")
 
-if computer_choose == 0:
+if computer_choice == 0:
   print(rock)
-if computer_choose == 1:
+if computer_choice == 1:
   print(paper)
-if computer_choose == 2:
+if computer_choice == 2:
   print(scissors)
 
-if computer_choose == 0 and choose == 1:
+if computer_choice == 0 and user_choice == 1:
   print("You win")
-elif computer_choose == 0 and choose == 2:
+elif computer_choice == 0 and user_choice == 2:
   print("You lose")
-elif computer_choose == 1 and choose == 0:
+elif computer_choice == 1 and user_choice == 0:
   print("You lose")
-elif computer_choose == 1 and choose == 2:
+elif computer_choice == 1 and user_choice == 2:
   print("You win")
-elif computer_choose == 2 and choose == 0:
+elif computer_choice == 2 and user_choice == 0:
   print("You win")
-elif computer_choose == 2 and choose == 1:
+elif computer_choice == 2 and user_choice == 1:
   print("You lose")  
-elif computer_choose == choose:
-  print("Dead heat")
+elif computer_choice == user_choice:
+  print("Draw")
